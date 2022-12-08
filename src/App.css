@@ -1,0 +1,32 @@
+.display {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+
+}
+
+.ulCard {
+    display: flex;
+    overflow: scroll;
+    padding: 12px;
+    gap: 12px;
+    height: 340px;
+}
+
+@media(min-width:769px) {
+    .display {
+        flex-direction: row;
+        width: 95%;
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+
+    .ulCard {
+        overflow: inherit;
+        flex-wrap: wrap;
+        height: inherit;
+    }
+}
